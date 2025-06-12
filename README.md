@@ -15,12 +15,15 @@ A lightweight Python tool that converts spoken audio to text **100% offline** us
    git clone https://github.com/yourusername/speech-to-text-whisper.git
    cd speech-to-text-whisper
 
+   ```
+
+
+
+```bash
+    pip install -r requirements.txt
 ```
 ```bash
- pip install -r requirements.txt
-```
-```bash
-python whisper_stt.py
+   python whisper_stt.py
 ```
 
 ``` bash
@@ -29,7 +32,7 @@ speech-to-text-whisper/
 ├── requirements.txt
 └── whisper_stt.py         # Main application code
 ```
-How It Works
+**How It Works**
 Records audio using sounddevice
 
 Converts to 16kHz WAV format
@@ -39,10 +42,11 @@ Feeds audio to Whisper's transformer model
 Returns punctuated text with language detection
 
 **Expected Output**
-'''bash
-    Speak now... (Recording for 5 seconds)
-Saved as recording.wav
 
---- Transcription ---
-"Hello this is a test of the speech recognition system"
+```bash
+    Speak now... (Recording for 5 seconds)
+    Saved as recording.wav
+
+    --- Transcription ---
+    "Hello this is a test of the speech recognition system"
 ```
